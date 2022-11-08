@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Ruben Fontes">
+    <meta name="description" content="Central de Atendimento">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Central de Atendimento</title>
+</head>
+<body>
+    <main>
+        <form action="" method="post">
+            <div class="content">
+                <div>
+                    <label for="cpf">CPF*</label>
+                    <input type="number" id="cpf" placeholder="Apenas números (11 dígitos)" max="11" required/>
+                </div>
+                <div>
+                    <label for="name">Nome Completo*</label>
+                    <input type="text" id="name" placeholder="" minlength="10" required/>
+                </div>
+                <div>
+                    <label for="email">Email*</label>
+                    <input type="text" id="email" placeholder="" required/>
+                </div>
+                <div>
+                    <label for="servidor">Lotação do Servidor*</label>
+                    <input type="number" id="servidor" placeholder="" required/>
+                </div>
+                <div>
+                    <label for="phone">Fone/Ramal*</label>
+                    <input type="number" id="phone" placeholder="" min="8" max="11" required/>
+                </div>
+                <div>
+                    <label for="subject">Solicitação (assunto)</label>
+                    <input type="text" id="subject" placeholder=""/>
+                </div>
+                <div>
+                    <label for="description">Descrição de Solicitação*</label>
+                    <textarea type="text" id="description" placeholder="" required></textarea>
+                </div>
+                <div>
+                    <label for="file" id="button-file">Selecionar arquivo</label>
+                    <input id="file" type="file">
+                </div>
+                <button type="submit"><span>Enviar</span></button>
+            </div>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
