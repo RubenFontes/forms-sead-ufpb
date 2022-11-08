@@ -11,39 +11,39 @@
 </head>
 <body>
     <main>
-        <form action="" method="post">
+        <form action="" method="">
             <div class="content">
                 <div>
-                    <label for="cpf">CPF*</label>
-                    <input type="number" id="cpf" placeholder="Apenas números (11 dígitos)" max="11" required/>
+                    <label for="cpf">CPF</label>
+                    <input type="number" name="" id="cpf" placeholder="Apenas números (11 dígitos)" maxlength="11" required/>
                 </div>
                 <div>
-                    <label for="name">Nome Completo*</label>
-                    <input type="text" id="name" placeholder="" minlength="10" required/>
+                    <label for="name">Nome Completo</label>
+                    <input type="text" name="" id="name" placeholder="" minlength="10" required/>
                 </div>
                 <div>
-                    <label for="email">Email*</label>
-                    <input type="text" id="email" placeholder="" required/>
+                    <label for="email">Email</label>
+                    <input type="text" name="" id="email" placeholder="" required/>
                 </div>
                 <div>
-                    <label for="servidor">Lotação do Servidor*</label>
-                    <input type="number" id="servidor" placeholder="" required/>
+                    <label for="server">Lotação do Servidor</label>
+                    <input type="text" name="" id="server" placeholder="" required/>
                 </div>
                 <div>
-                    <label for="phone">Fone/Ramal*</label>
-                    <input type="number" id="phone" placeholder="" min="8" max="11" required/>
+                    <label for="phone">Fone/Ramal</label>
+                    <input type="text" name="" id="phone" placeholder="Ex.: (11) 91234-1234" minlength="8" maxlength="15" onkeyup="mask(this, phone)" required/>
                 </div>
                 <div>
-                    <label for="subject">Solicitação (assunto)</label>
-                    <input type="text" id="subject" placeholder=""/>
+                    <label for="request">Solicitação (assunto)</label>
+                    <input type="text" name="" id="request" placeholder="" required/>
                 </div>
                 <div>
-                    <label for="description">Descrição de Solicitação*</label>
-                    <textarea type="text" id="description" placeholder="" required></textarea>
+                    <label for="description">Descrição de Solicitação</label>
+                    <textarea type="text" name="" id="description" placeholder="" required></textarea>
                 </div>
                 <div>
                     <label for="file" id="button-file">Selecionar arquivo</label>
-                    <input id="file" type="file">
+                    <input name="" type="file" id="file">
                 </div>
                 <button type="submit"><span>Enviar</span></button>
             </div>

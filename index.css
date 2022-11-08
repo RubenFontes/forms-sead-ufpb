@@ -14,7 +14,7 @@ body{
 }
 
 main{
-    background-image: url("images/bg.svg");
+    background-image: url("assets/bg.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -38,7 +38,7 @@ div{
     margin: 10px 0;
 }
 
-label:not(#file){
+label{
     color: black;
     font-weight: 500;
     display: block;
@@ -46,10 +46,15 @@ label:not(#file){
     transition: 0.3s;
 }
 
+label:not(#button-file)::after{
+    content:" *"; 
+    color: #0071bb;
+}
+
 input:not(#file), textarea{
     display: flex;
     width: 30vw;
-    height: 40px;
+    height: 36px;
     border: 1px solid gainsboro ;
     border-radius: .4rem;
     padding: 0 1rem;
@@ -106,7 +111,6 @@ button:hover{
 
 button span{
     cursor: pointer;
-    display: inline-block;
     position: relative;
     transition: 0.5s;
 }
