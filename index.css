@@ -68,7 +68,7 @@ input:not(#file), textarea{
 
 .content div input:focus, .content div textarea:focus{
     border: none;
-    border-bottom: 1px solid black !important;
+    border-bottom: 1px solid #0071bb !important;
     outline: none;
     background-color: inherit;
 }
